@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>
+    {% block title %}
+    {% endblock %}
+</title>
+
+    {% block link %}
+    {% endblock %}
+
+</head>
+<body class="user-select">
+    <section>
+        {% block header %}
+        {% endblock %}
+        <div>
+            {% block left %}
+            {% endblock %}
+
+            {% block right %}
+            {% endblock %}
+        </div>
+    </section>
+
+{% block userinfo %}
+{% endblock %}
+
+{% block logininfo %}
+{% endblock %}
+
+{% block wechat %}
+{% endblock %}
+
+{% block content%}
+{% endblock %}
+
+{% block js %}
+{% endblock %}
+</body>
+</html>
